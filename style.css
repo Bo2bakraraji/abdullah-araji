@@ -72,9 +72,9 @@ tr:hover {
     /* Ensure table headers are readable */
     th, td {
         padding: 8px;
+        font-size: 0.9rem;
     }
 
-    /* Adjust the font size and layout */
     h1 {
         font-size: 1.2rem;
     }
