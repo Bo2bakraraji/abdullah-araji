@@ -6,7 +6,6 @@ body {
     direction: rtl;
     text-align: right;
 }
-
 .menu-container {
     width: 100%;
     max-width: 900px;
@@ -16,21 +15,25 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-x: auto; /* Allow horizontal scrolling */
-    text-align: center; /* Align content inside */
+    text-align: center;
+    position: relative; /* Added to handle child positioning */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    margin-top: 20px; /* Create space between table and header */
 }
 
 h1 {
     margin-bottom: 20px;
     color: #333;
     text-align: center;
-    width: max-content; /* Make the width match the content */
-    margin: 0 auto; /* Center it within the scrolling container */
+    position: sticky; /* Keeps it aligned with scrolling content */
+    left: 0; /* Ensures alignment with the table's left edge */
+    width: max-content; /* Width adapts to content */
+    margin: 0 auto; /* Centers horizontally */
 }
 
 
