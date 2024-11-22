@@ -15,13 +15,14 @@ body {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Add this to handle overflow gracefully */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    table-layout: fixed; /* Ensure table fits within the container */
 }
 
 h1 {
@@ -45,6 +46,7 @@ thead th {
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
+    word-wrap: break-word; /* Prevent long text from breaking layout */
 }
 
 td {
@@ -76,11 +78,11 @@ tr:hover {
     }
     table {
         font-size: 0.8rem;
-        table-layout: fixed; /* Ensures the table fits within the container */
+        table-layout: fixed; /* Ensure table columns shrink on small screens */
     }
     th, td {
         padding: 5px;
-        word-wrap: break-word; /* Prevents long text from breaking layout */
+        word-wrap: break-word; /* Prevent content overflow */
     }
     h1 {
         font-size: 1.1rem;
