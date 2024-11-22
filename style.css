@@ -26,6 +26,9 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    display: block;  /* Makes the table horizontally scrollable */
+    -webkit-overflow-scrolling: touch;
 }
 
 caption {
@@ -66,22 +69,33 @@ tr:hover {
 }
 
 @media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
+    /* Ensure table headers are readable */
     th, td {
-        text-align: left;
-        border: none;
         padding: 8px;
     }
 
-    th {
-        background: none;
-        color: #1093cf;
+    /* Adjust the font size and layout */
+    h1 {
+        font-size: 1.2rem;
     }
 
-    tr {
-        margin-bottom: 15px;
+    caption {
+        font-size: 1rem;
+    }
+
+    td, th {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    /* Allow horizontal scrolling */
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    /* Make the offers section more readable */
+    .offers {
+        font-size: 0.9rem; /* Smaller text for mobile */
     }
 }
