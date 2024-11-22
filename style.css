@@ -71,8 +71,9 @@ tr:hover {
         font-size: 0.9rem;  /* Adjust font size */
     }
     .menu-container {
-        padding: 15px;  /* Reduce padding for mobile */
+        overflow-x: auto;
     }
+    
    th, td {
         padding: 5px;  /* Reduce padding in table for smaller screens */
     }
@@ -92,8 +93,8 @@ tr:hover {
     /* Allow horizontal scrolling */
     table {
         width: 100%;
-        font-size: 0.8rem;
-        padding: 5px;
+        overflow-x: auto;
+        display: block;
     }
     /* Make the offers section more readable */
     .offers {
