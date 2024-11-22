@@ -69,14 +69,14 @@ tr:hover {
 }
 
 @media (max-width: 600px) {
-    /* Ensure table headers are readable */
+    /* Ensure table headers are readabl*/
     th, td {
-        padding: 8px;
-        font-size: 0.9rem;
+        padding: 5px;
+        font-size: 0.8rem;
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     caption {
