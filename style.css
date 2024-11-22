@@ -8,19 +8,20 @@ body {
 }
 
 .menu-container {
-    max-width: 100%; /* Adjusted to take full width on mobile */
+    width: 100%;
+    max-width: 900px;
     margin: 20px auto;
-    padding: 15px; /* Slightly reduced padding for better fit */
+    padding: 20px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Add this to handle overflow gracefully */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    padding: 10px;
 }
 
 h1 {
@@ -68,34 +69,29 @@ tr:hover {
 
 @media (max-width: 600px) {
     body {
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 0.9rem;
     }
-
     .menu-container {
-        padding: 10px; /* Reduce padding for better fit on small screens */
+        padding: 15px;
     }
-
-    th, td {
-        padding: 5px; /* Smaller padding for table cells */
-    }
-
-    h1 {
-        font-size: 1.1rem; /* Smaller heading size */
-    }
-
-    caption {
-        font-size: 1rem; /* Adjusted caption size */
-    }
-
-    td, th {
-        font-size: 0.9rem; /* Smaller font for mobile */
-    }
-
     table {
-        font-size: 0.8rem; /* Overall smaller table font */
+        font-size: 0.8rem;
+        table-layout: fixed; /* Ensures the table fits within the container */
     }
-
+    th, td {
+        padding: 5px;
+        word-wrap: break-word; /* Prevents long text from breaking layout */
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    caption {
+        font-size: 1rem;
+    }
+    td, th {
+        font-size: 0.9rem;
+    }
     .offers {
-        font-size: 0.9rem; /* Adjusted font for offers */
+        font-size: 0.9rem;
     }
 }
