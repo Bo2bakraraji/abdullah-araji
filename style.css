@@ -41,12 +41,13 @@ thead th {
     background-color: #1093cf;
     color: white;
     padding: 10px;
+    font-size: 0.9rem;
 }
 
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    word-wrap: break-word;
+    font-size: 1rem; /* Default size for desktop */
 }
 
 td {
@@ -74,26 +75,25 @@ tr:hover {
         font-size: 0.8rem; /* Reduce base font size for mobile */
     }
     .menu-container {
-        padding: 15px;
+        padding: 10px;
     }
     table {
-        font-size: 0.7rem; /* Reduce table font size for mobile */
-        table-layout: fixed;
+        font-size: 0.7rem;
+        table-layout: fixed; /* Ensure the table fits within the container */
     }
     th, td {
-        padding: 5px;
-        word-wrap: break-word;
+        padding: 5px; /* Adjust padding for better fit */
+        font-size: clamp(0.6rem, 2.5vw, 0.8rem); /* Dynamically adjust size */
+        overflow: hidden; /* Prevent overflow */
+        white-space: nowrap; /* Prevent wrapping */
     }
     h1 {
-        font-size: 1rem; /* Reduce heading font size */
+        font-size: 1rem; /* Reduce heading size */
     }
     caption {
-        font-size: 0.9rem; /* Reduce caption font size */
-    }
-    td, th {
-        font-size: 0.8rem; /* Smaller font size for table data */
+        font-size: 0.85rem; /* Reduce caption size */
     }
     .offers {
-        font-size: 0.8rem;
+        font-size: 0.75rem; /* Adjust font size for special offers */
     }
 }
