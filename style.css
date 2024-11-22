@@ -28,7 +28,10 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    width: 100%; /* Ensure it spans the full width */
+    display: block; /* Explicitly set it as a block element */
 }
+
 
 caption {
     margin-bottom: 10px;
