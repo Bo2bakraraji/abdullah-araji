@@ -15,14 +15,14 @@ body {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    table-layout: fixed; /* Ensure table fits within the container */
+    table-layout: fixed;
 }
 
 h1 {
@@ -46,7 +46,7 @@ thead th {
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    word-wrap: break-word; /* Prevent long text from breaking layout */
+    word-wrap: break-word;
 }
 
 td {
@@ -71,29 +71,29 @@ tr:hover {
 
 @media (max-width: 600px) {
     body {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Reduce base font size for mobile */
     }
     .menu-container {
         padding: 15px;
     }
     table {
-        font-size: 0.8rem;
-        table-layout: fixed; /* Ensure table columns shrink on small screens */
+        font-size: 0.7rem; /* Reduce table font size for mobile */
+        table-layout: fixed;
     }
     th, td {
         padding: 5px;
-        word-wrap: break-word; /* Prevent content overflow */
+        word-wrap: break-word;
     }
     h1 {
-        font-size: 1.1rem;
+        font-size: 1rem; /* Reduce heading font size */
     }
     caption {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Reduce caption font size */
     }
     td, th {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Smaller font size for table data */
     }
     .offers {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
