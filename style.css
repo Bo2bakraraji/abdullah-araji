@@ -30,12 +30,10 @@ h1 {
     margin-bottom: 20px;
     color: #333;
     text-align: center;
-    position: sticky; /* Keeps it aligned with scrolling content */
-    left: 0; /* Ensures alignment with the table's left edge */
+    position: relative; 
     width: max-content; /* Width adapts to content */
     margin: 0 auto; /* Centers horizontally */
 }
-
 
 caption {
     margin-bottom: 10px;
@@ -71,7 +69,7 @@ tr:hover {
 }
 
 .offers {
-    background-color: #ffebcc;
+    background-color: #f04141;
     font-style: italic;
     font-weight: bold;
     color: #333;
